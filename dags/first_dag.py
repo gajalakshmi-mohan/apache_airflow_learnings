@@ -2,7 +2,7 @@ from airflow import DAG
 from datetime import datetime, timedelta
 from airflow.operators.python import PythonOperator
 
-dag1 = DAG(dag_id = "first_dag", start_date = datetime(2026,8,21), catchup = False, schedule = "@hourly" )
+dag1 = DAG(dag_id = "first_dag", start_date = datetime(2026,8,21), catchup = False)
 
 def hello():
     print("Hello from Task1")
